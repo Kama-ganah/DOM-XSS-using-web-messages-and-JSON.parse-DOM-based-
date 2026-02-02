@@ -1,7 +1,7 @@
 # Overview
-As a penetration tester, I assessed the application’s client-side message handling and identified a DOM-based Cross-Site Scripting (XSS) vulnerability involving postMessage and unsafe use of JSON.parse(). By sending a crafted JSON message from a malicious iframe, it was possible to execute arbitrary JavaScript in the victim’s browser, demonstrated via the print() function. This project highlights the risks of unvalidated cross-origin messaging and unsafe parsing in modern web applications.
+I assessed the application’s client-side message handling and identified a DOM-based Cross-Site Scripting (XSS) vulnerability involving postMessage and unsafe use of JSON.parse(). By sending a crafted JSON message from a malicious iframe, it was possible to execute arbitrary JavaScript in the victim’s browser, demonstrated via the print() function. This project highlights the risks of unvalidated cross-origin messaging and unsafe parsing in modern web applications.
 
-# Steps Undertaken
+# Methodology
 
 Step 1: Analyzed homepage JavaScript to locate window.addEventListener("message", ...) usage.
 
